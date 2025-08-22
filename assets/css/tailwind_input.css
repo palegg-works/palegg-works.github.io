@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+body {
+  opacity: 0;
+}
+
+body.loaded {
+  opacity: 1;
+}

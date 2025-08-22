@@ -530,6 +530,12 @@
     }
   }
 }
+body {
+  opacity: 0;
+}
+body.loaded {
+  opacity: 1;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;

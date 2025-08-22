@@ -26,6 +26,14 @@ fn App() -> Element {
 
 #[component]
 fn Home() -> Element {
+    use_effect(move || {
+        document::eval(
+            r#"
+            document.body.classList.add('loaded');
+            "#
+        );
+    });
+
     rsx! {
         // Full screen container to center content both horizontally and vertically
         div {
